@@ -4,6 +4,11 @@ Bu depo, LÖVE çerçevesine yardımcı araçlar ve kodlar içeren dosyalar grub
 ## Örnekler
 
 ### system_info.lua
+
+``` lua
+-- Modülü çağır
+local system_info = require("system_info")
+```
 ``` lua
 -- Sistem bilgilerini pencerenin sağ üst köşeye yazdır
 system_info.print(system_info.getInfo())
