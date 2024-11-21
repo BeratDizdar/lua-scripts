@@ -10,7 +10,8 @@ Bu depo, LÖVE çerçevesine yardımcı araçlar ve kodlar içeren dosyalar grub
 local system_info = require("system_info")
 ```
 ``` lua
--- Sistem bilgilerini pencerenin sağ üst köşeye yazdır
+-- .getInfo() -> sistem bilgilerini döndür
+-- .print() -> sağ üste yazdır
 system_info.print(system_info.getInfo())
 ```
 
