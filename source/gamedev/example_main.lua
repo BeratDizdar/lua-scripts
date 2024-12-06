@@ -2,10 +2,10 @@
 --[ Import Modules]--
 ---------------------
 
-require("struct")
-require("progressbar")
-require("redef")
-require("utils")
+--require("struct")
+--require("progressbar")
+--require("redef")
+--require("utils")
 
 ----------------------
 --[ Load Functions ]--
@@ -17,7 +17,7 @@ gameStates = {
     options = 3
 }
 local StateManager = require("state_manager")
-StateManager.registerStateModule(gameStates.menu, "menu")
+StateManager.registerStateModule(gameStates.menu, "menu") -- require(menu)
 StateManager.registerStateModule(gameStates.ingame, "ingame")
 StateManager.registerStateModule(gameStates.options, "options")
 StateManager.setState(gameStates.menu)
