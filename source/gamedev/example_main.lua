@@ -2,9 +2,7 @@
 --[ Import Modules]--
 ---------------------
 
---require("struct")
---require("progressbar")
---require("redef")
+--require("global")
 --require("utils")
 
 ----------------------
@@ -12,14 +10,13 @@
 ----------------------
 
 gameStates = {
-    menu = 1,
-    ingame = 2,
-    options = 3
+    menu = 1
+    -- devamı
 }
 local StateManager = require("state_manager")
-StateManager.registerStateModule(gameStates.menu, "menu") -- require(menu)
-StateManager.registerStateModule(gameStates.ingame, "ingame")
-StateManager.registerStateModule(gameStates.options, "options")
+StateManager.registerStateModule(gameStates.menu, "menu")
+-- sonraki modüller buraya
+
 StateManager.setState(gameStates.menu)
 
 ----------------------
